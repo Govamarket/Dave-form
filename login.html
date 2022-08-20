@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <form id="form" class="box"  method="GET">
+        <h1>
+            Dave Workshop login
+        </h1>
+        <input type="text" name="" placeholder="firstname" id="firstName" required>
+        <input type="text" name="" placeholder="lastname" id="lastname" required>
+        <input type="text" name="" placeholder="email" id="email" required>
+        <input type="text" name="" placeholder="username" id="username" required>
+        <input type="password" name="" placeholder="password" id="password" required>
+        <input type="password" name="" placeholder="confirm password" id="confirmpassword" required>
+        <a href="">forget password</a>
+        <div id="error-nwl"></div>
+        <input id="submit" type="submit" name="" value="Login" onclick="validate()">
+    </form>
+
+</body>
+<script>
+    let firstname = document.querySelector('firstname');
+let lastname = document.querySelector('lastname');
+let user = document.querySelector('username');
+let password =document.querySelector('password');
+let confirmpassword =document.querySelector('confirmpassword');
+const submit =document.querySelector('submit')
+
+submit.addEventListener("click", function(e){
+
+if 
+(password.value.length < 4){
+    alert('Fail');
+}
+
+if(confirmpassword.value ==password){
+    return true;
+}
+
+else
+
+(password.value ==confirmpassword){
+    return false;
+}
+
+})
+
+alert('Welcom')
+</script>
+</html>
